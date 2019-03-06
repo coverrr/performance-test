@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="performance-suite">
+	<listeners>
+		<listener class-name="listeners.PerformanceListener">
+			<parameter name="persistenceType" value="EXCEL" />
+		</listener>
+
+	</listeners>
+	<test name="performance-test">
+		<classes>
+			<class name="tests.AbrechnungDaoTest"></class>
+			<class name="tests.IcdDaoTest"></class>
+		</classes>
+	</test>
+</suite>
